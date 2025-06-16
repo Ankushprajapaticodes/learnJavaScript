@@ -1,0 +1,32 @@
+.calculator-div{
+  border: 1px solid lightgray;
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+input{
+  margin-top: 10px;
+  width: 80%;
+  font-size: larger;
+  height: 35px;
+  font-weight: 600;
+}
+
+.btn-div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.button{
+  
+  font-size: 19px;
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 5px;
+}

@@ -1,0 +1,13 @@
+.addToBag-btn{
+      background-color: #85dd87;
+      padding: 10px 35px;
+      border: none;
+      border-radius: 10px;
+    }
+     .Wishlist-btn{
+      background-color: transparent;
+      padding: 7px 25px;
+      border-radius: 10px;
+      border: 2.5px solid black;
+      text-transform: uppercase;
+     }
