@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Object Practice</title>
+</head>
+<body>
+
+  <script>
+    // let product = {
+
+    //   name : 'jeans',
+    //   size : 'S',
+    //   price : 100,
+    //   'delivery-time' : 'Same day',
+
+    // };
+
+    // let copyOfProduct = product;
+
+    // copyOfProduct.size = 'M';
+    // console.log(product.size);
+    // copyOfProduct.size = 'N';
+    // console.log(product.size);
+    // console.log(product['delivery-time']);
+
+    // let obj = {
+    //   message : 'good job',
+    //   status : 'complete',
+    // }
+
+    // let {status,message} = obj;
+    // console.log(status,message);
+
+    let product = {
+      name : 'Name',
+      item : 'shoes',
+      price : 1000,
+      brand : 'nike',
+    };
+    let product1 = {
+      name : 'Name',
+      item : 'shoes',
+      price : 1000,
+      brand : 'nike',
+    }
+
+    function isIdenticalProduct(product1,product2){
+      if(typeof product1!=='object' || typeof product2!=='object'){
+        console.warn(`it's not object brother`);
+        return false;
+      }
+
+      if(product1===product2){
+        return false;
+      }
+
+      if(product1.name===product2.name && product1.item===product2.item && product1.price===product2.price && product1.brand===product2.brand){
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+
+
+    console.log(isIdenticalProduct(product1,''));
+    console.log(isIdenticalProduct(product1,product1));
+    console.log(isIdenticalProduct(product,product1));
+
+
+    
+
+  </script>
+  
+</body>
+</html>

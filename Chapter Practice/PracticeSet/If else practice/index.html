@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If else practice</title>
+</head>
+<body>
+
+  <script>
+    let maxDiscount = 100;
+    let gender = 'child';
+    let age = 9;
+    if(gender==='female'){
+      maxDiscount-=50;
+    }
+    else if(gender==='child' && age<5) {
+      maxDiscount-=100;
+    }
+    else if(gender==='child' && age > 5 && age < 8){
+        maxDiscount-=50;
+    }
+
+     if(age > 65){
+      maxDiscount-=30;
+    }
+
+    console.log(maxDiscount);
+  </script>
+  
+</body>
+</html>
