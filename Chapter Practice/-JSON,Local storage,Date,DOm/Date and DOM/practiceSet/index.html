@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice set</title>
+
+  <style>
+    #btn{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .js-even{
+      background-color: rgb(43, 219, 20);
+    }
+    .js-odd{
+      background-color: rgb(225, 4, 4);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="head" ></h1>
+  <button id="btn" onclick="updateCount()"></button>
+  <script>
+
+    let ClickCount =localStorage.getItem('count') || 0;;
+
+    function updateCount(){
+      ClickCount++;
+      localStorage.setItem('count',ClickCount);
+      update();
+      
+    }
+
+
+    function update(){
+      let text = document.querySelector('#btn'); 
+      if(ClickCount % 2 === 0){
+        text.classList.remove('js-odd');
+        text.classList.add('js-even');
+      }
+      else {
+        text.classList.remove('js-even');
+        text.classList.add('js-odd');
+
+      }
+      text.innerText = ClickCount;
+    }
+
+    update();
+
+
+
+
+
+
+
+
+
+
+    function greeting(personName = 'Dear'){
+      let date = new Date();
+      let hours = date.getHours();
+      let heading = document.querySelector('.head');
+
+      if(hours >5 && hours < 12){
+        heading.innerText = `Good morning ${personName}`;
+      }
+      else if(hours > 12 && hours < 18){
+        heading.innerText = `Good afternoon ${personName}`;
+      }
+      else{
+        heading.innerText = `Good night ${personName}`;
+      }
+    }
+    greeting();
+    
+  
+  </script>
+  
+</body>
+</html>
