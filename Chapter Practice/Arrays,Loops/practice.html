@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practice</title>
+</head>
+<body>
+
+  <script>
+
+    let arr = [5,6];
+    arr.unshift(4);
+    arr.push(7);
+    console.log(arr);
+
+    function returnElement(index){
+      return arr[index];
+    }
+
+    console.log(returnElement(2));
+
+    let copy = arr.slice(0,3);
+    console.log(copy);
+
+    // let count = 0;
+    // let number = 1;
+    
+    // while(coutn <= 5){
+
+
+
+    // }
+
+    for(let i = 10; i >= 1; i--){
+      console.log(i);
+    }
+
+    console.log('break');
+
+    let arr1 = [1,-6,5,7,-98];
+    for(let i = 0; i < arr1.length; i++){
+      if(arr1[i] < 0){
+        continue;
+      }
+      console.log(arr1[i]);
+    }
+
+
+    let string = ['KG','Coding', 'JavaScript' , 'Course' , 'is' , 'Best'];
+    let str = '';
+
+    for(let i = 0; i < string.length; i++){
+      str += string[i] + ' ';
+    }
+    console.log(str);
+
+    function isPrime(num){
+      for(let i = 2; i < num; i++){
+        if(num % i === 0){
+          return false;
+        }
+      }
+      
+      return true;
+    }
+
+    console.log(isPrime(5));
+    console.log(isPrime(10));
+    console.log(isPrime(11));
+
+
+
+
+  </script>
+  
+</body>
+</html>
